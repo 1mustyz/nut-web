@@ -6,18 +6,26 @@
 
 .nav {
     /* border: 1px solid white; */
-    width: 85%;
+    width: 94%;
+    padding-right: 80%;
     height: 3rem;
     margin: auto;
-    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+}
+
+.nav.nav-scroll {
+    background-color: #010E21;
 }
 
 .logo {
     font-size: larger;
     font-weight: 900;
+    margin-top: 0.1rem;
 }
 
 .fa-bars {
@@ -43,6 +51,7 @@
 
 .header-button-one {
     padding: 1rem;
+    margin-right: 3.5rem;
     width: 15%;
     background-color: #2196F3;
     text-align: center;
@@ -58,9 +67,12 @@
 }
 
 .drop-downs {
-    position: absolute;
-    margin-left: 51rem;
-    margin-top: 1.8rem;
+    position: fixed;
+    margin-left: 52.5rem;
+    margin-top: 5rem;
+}
+.drop-downs.drop-down-scroll {
+    margin-top: 3rem;
 }
 .blog {
     height: 6rem;
@@ -95,7 +107,7 @@
 .header-body {
     display: flex;
     justify-content: space-between;
-    margin-top: 2%;
+    margin-top: 6%;
 }
 
 .left {
@@ -140,23 +152,127 @@
     margin-left: 2rem;
 }
 
+
+/* main */
+.main {
+        width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.main-color-black{
+    color: black;
+}
+
+.main-header {
+    color: #303F9F;
+}
+
+.main-text {
+    margin-top: 2rem;
+    width: 50%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.main-body {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    margin-top: 5rem;
+    border-radius: 5px;
+    border: 2px solid #e0c9bf;
+    padding: 2rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 14rem;
+    justify-content: space-between;
+}
+.card:hover {
+    border-color: #303F9F;;
+}
+.card-icon {
+    color: #303F9F;
+    font-size: 3rem;
+}
+
+.card-head {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    text-align: center;
+    color: #85756e;
+}
+
+/* main about us */
+
+.about-us {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 7rem;
+}
+
+.about-us-left {
+    background-image: url('../images/section_aboutus.jpg');
+    width: 50%;
+    padding: 10rem;
+    padding-left: 4rem;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-heading {
+    font-size: 2rem;
+}
+
+.about-text {
+    width: 80%;
+    line-height: 1.5rem;
+}
+
+.about-link {
+    border: 1px solid #40C4FF;
+    padding: 1rem;
+    width: 6rem;
+    text-align: center;
+}
+.about-link:hover {
+    border-color: #303F9F;
+}
+
+.about-us-right {
+    width: 50%;
+}
+.about-us-right img {
+    width: 100%;
+    height: 100%;
+    
+}
 @media only screen and (max-width: 480px) {
 
     .nav {
         flex-direction: column;
+        padding-left: 0.8rem;
     }
 
     .sub-nav {
-        /* border: 1px solid white; */
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 90%;
-        /* margin: 0; */
         padding: 2%;
         padding-left: 10%;
-        padding-right: 10%;
-        /* background-color: #6610f2; */
+        padding-right: 13%;
     }
 
     .fa-bars {
@@ -232,6 +348,10 @@
         margin: auto;
     }
 
+    .header-body {
+        margin-top: 6rem;
+    }
+
     .header-title {
         font-weight: 300;
         font-size: 1.2rem;
@@ -249,5 +369,53 @@
         color: #40C4FF;
         font-size: 2.2rem;
         margin-left: 2rem;
+    }
+
+    /* main */
+    .main-header {
+        font-size: 1.5rem;
+    }
+
+    .main-text {
+        margin: 1.5rem;
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .main-body {
+        flex-direction: column;
+        width: 100%;
+        height: 60rem;
+    }
+    
+    .card {
+        width: 70%;
+        margin: auto;
+        justify-content: space-around;
+
+    }
+
+    /* main about */
+    .about-us {
+        margin-top: 2rem;
+    }
+
+    .about-us-right {
+        display: none;
+    }
+
+    .about-us-left {
+        width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+
+    .about-heading {
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 0.8rem;
+        width: 90%;
     }
   }

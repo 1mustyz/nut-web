@@ -7,6 +7,9 @@ const headerBody = document.querySelector('.header-body');
 const blogNav = document.querySelector('.blog');
 const blogNavLink = document.querySelector('.blog-nav-link');
 
+const nav = document.querySelector('.nav');
+const dropDowns = document.querySelector('.drop-downs');
+
 bars.addEventListener('click', ()=>{
     console.log('hello');
     navList.classList.toggle('togle-display');
@@ -53,5 +56,16 @@ blogNavLink.addEventListener('mouseleave', ()=>{
     });
    
     
+});
+
+window.addEventListener('scroll', (e) => {
+    
+    const currentScroll = window.pageYOffset
+
+    currentScroll > 32
+        ? nav.classList.add('nav-scroll')
+            ? dropDowns.classList.remove('drop-downs-scroll')
+            : ''
+        : nav.classList.remove('nav-scroll');
 });
 
