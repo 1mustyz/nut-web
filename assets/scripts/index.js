@@ -9,6 +9,9 @@ const blogNavLink = document.querySelector('.blog-nav-link');
 
 const nav = document.querySelector('.nav');
 const dropDowns = document.querySelector('.drop-downs');
+const projectImage = document.querySelectorAll('.our-project-image');
+const projectDescription = document.querySelectorAll('.our-project-description');
+const teamCard = document.querySelectorAll('.our-team-card')
 
 bars.addEventListener('click', ()=>{
     console.log('hello');
@@ -69,3 +72,32 @@ window.addEventListener('scroll', (e) => {
         : nav.classList.remove('nav-scroll');
 });
 
+projectImage.forEach(image => {
+    image.addEventListener('mouseenter',(e)=>{
+        console.log(e.currentTarget)
+        e.currentTarget.classList.add('togle-display');
+        e.currentTarget.nextElementSibling.classList.remove('togle-display');
+    });
+
+   
+});
+
+projectDescription.forEach(description => {
+    description.addEventListener('mouseleave', (e) => {
+        console.log(e.currentTarget)
+        e.currentTarget.classList.add('togle-display');
+        e.currentTarget.previousElementSibling.classList.remove('togle-display');
+    })
+})
+
+teamCard.forEach(card => {
+    card.addEventListener('mouseenter', (e) => {
+        console.log(e.currentTarget.children[1])
+        e.currentTarget.children[1].classList.remove('togle-display');
+    })
+
+    card.addEventListener('mouseleave', (e) => {
+        console.log(e.currentTarget.children[1])
+        e.currentTarget.children[1].classList.add('togle-display');
+    })
+})

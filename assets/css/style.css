@@ -9,7 +9,8 @@
     width: 94%;
     padding-right: 80%;
     height: 3rem;
-    margin: auto;
+    top: 0;
+    left: 0;
     padding-top: 20px;
     padding-left: 5rem;
     display: flex;
@@ -25,7 +26,7 @@
 .logo {
     font-size: larger;
     font-weight: 900;
-    margin-top: 0.3rem;
+    /* margin-top: 0.35rem; */
 }
 
 .fa-bars {
@@ -258,6 +259,139 @@
     height: 100%;
     
 }
+
+/* main our project */
+.our-project {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.our-project > *{
+    color: black;
+}
+
+.our-project-heading {
+    color: #303F9F;
+}
+
+.our-project-text {
+    color: #727272;
+    margin-top: 1.5rem;
+}
+
+.our-project-details {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.our-project-card {
+}
+
+.our-project-card > img{
+    width: 20rem;
+    height: 20rem;
+    /* display: none; */
+
+}
+
+.our-project-description {
+    /* display: none; */
+    /* border: 1px solid #40C4FF; */
+    width: 20rem;
+    height: 18rem;
+    font-size: small;
+    color: black;
+    line-height: 2.0rem;
+    padding-top: 2rem;
+}
+
+.our-project-description.togle-display {
+    display: none;
+}
+
+.our-project-image.togle-display {
+    display: none;
+}
+
+/* our team */
+.our-team {
+    margin-top: 4rem;
+}
+
+.our-team > * {
+    color: black;
+
+}
+
+.our-team-heading {
+    font-size: 2.3em;
+    color: #303F9F;
+    text-align: center;
+
+}
+
+.our-team-text {
+    margin-top: 3rem;
+    text-align: center;
+    color: #727272;
+
+}
+
+.our-team-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.our-team-card{
+    /* border: 1px solid black; */
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 17rem;
+    height: 22rem;
+}
+
+.our-team-card > img {
+    /* background-color: #f1f1f1; */
+    width: 100%;
+}
+.our-team-card:nth-child(even){
+    background-color: #f0d2d2;
+
+}
+
+.our-team-card .name {
+    color: black;
+}
+
+.our-team-card .job {
+    color: #727272;
+
+}
+
+.contact-staff {
+    position: absolute;
+    margin-top: 17rem;
+}
+.contact-staff > * {
+    padding: 1rem;
+    background-color: #2196F3;
+    border-radius: 20px;
+    color: #010E21
+}
+
+.contact-staff.togle-display { 
+    display: none;
+}
+
 @media only screen and (max-width: 480px) {
 
     .nav {
@@ -298,13 +432,14 @@
     .header-body.togle-display {
         display: none;
     }
-
+    
     .nav-list {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         margin-left: 0;
+        margin-top: 1rem;
         width: 100%;
         min-height: 60vh;
         height: 100vh;
@@ -417,5 +552,27 @@
     .about-text {
         font-size: 0.8rem;
         width: 90%;
+    }
+
+    /* our project details */
+    .our-project {
+        width: 100%;
+        
+    }
+
+    .our-project-details {
+        width: 100%;
+        
+    }
+
+    .our-project-card > img, .our-project-description {
+        width: 95%;
+        margin: auto;
+    }
+
+    /* our team */
+    .our-team-details {
+        flex-direction: column;
+        align-items: center;
     }
   }
