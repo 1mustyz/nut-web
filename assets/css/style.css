@@ -1,7 +1,7 @@
 .header {
     border: 1px solid black;
     height: 100vh;
-    background-image: url('../images/h1_hero.jpg');
+    /* background-image: url('../images/h1_hero.jpg'); */
 }
 
 .nav {
