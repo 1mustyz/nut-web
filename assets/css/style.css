@@ -791,7 +791,7 @@
     .mission {
         flex-direction: column;
         align-items: center;
-        min-height: 120vh;
+        min-height: 140vh;
         padding: 2rem;
     }
     
