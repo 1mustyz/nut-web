@@ -4,6 +4,8 @@
     color: wheat;
     text-decoration: none;
     font-family: "Lucida Console", "Courier New", monospace;
+    list-style-type : none;
+
 }
 
 body {

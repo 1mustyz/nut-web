@@ -320,6 +320,7 @@
 
 /* our team */
 .our-team {
+    width: 90%;
     margin-top: 4rem;
 }
 
@@ -336,6 +337,7 @@
 }
 
 .our-team-text {
+    
     margin-top: 3rem;
     text-align: center;
     color: #727272;
@@ -343,6 +345,7 @@
 }
 
 .our-team-details {
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -391,6 +394,185 @@
 .contact-staff.togle-display { 
     display: none;
 }
+
+
+/* contact us */
+.contact-us {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+.contact-us > * {
+    color: black;
+}
+
+.contact-heading {
+    color: #303F9F;
+}
+
+.contact-text {
+    margin-top: 2rem;
+    border: 1px solid black;
+    background-image: url('../images/h1_hero.jpg');
+    width: 76%;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+
+}
+
+.contact-form {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 18rem;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.contact-form > * {
+    height: 1rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.name-email {
+    width: 100%;
+    height: 2.2rem;
+    text-align: center;
+
+}
+.name-email > * {
+    width: 19rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border-width: thin;
+    
+}
+
+.adjust {
+    width: 40rem;
+    padding: 0.8rem;  
+    border-width: thin;
+}
+
+.message {
+    height: 5rem;
+}
+
+.contact-submit {
+    background-color: #2196F3;
+    width: 41.3rem;
+    height: 2rem;
+    font-size: medium;
+    padding: 5px;   
+    border: none;
+
+    
+}
+
+.contact-submit:hover{
+    background-color:  #40C4FF;
+
+}
+
+/* our mission our vission */
+.mission {
+    background-color: #2196F3;
+    margin-top: 7rem;
+    height: 15rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.mission > * {
+    width: 40%;
+    margin-top: 3rem;
+}
+
+.mission  p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5rem;
+    font-size: small;
+
+}
+
+.mission-head {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+
+
+/* footer */
+.footer {
+    border: 1px solid black;
+    height: 90vh;
+    background-image: url('../images/h1_hero.jpg');
+
+}
+
+.footer-main {
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 10rem;
+    padding-top: 6rem;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+}
+.color {
+    color: #8ba4b1;
+}
+
+.color-head {
+    color: #2196F3;
+}
+
+.footer-sub-head {
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+
+.footer-team-details > div {
+    margin-top: 3.4rem;
+}
+
+.footer-team-details {
+    /* margin-top: 6rem; */
+    width: 13rem;
+}
+
+.team-details-social > * {
+    border: 1px solid white;
+    color: #8ba4b1;
+    padding: 0.9rem;
+    border-radius: 25px;
+}
+
+.team-details-social > i:hover {
+    background-color: #2196F3;
+    border: none;
+}
+
+.copy {
+    margin-top: 3rem;
+}
+
+.copy-text {
+    border-top: 1px solid #8ba4b1;
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+    color: #8ba4b1;
+}
+
 
 @media only screen and (max-width: 480px) {
 
@@ -574,5 +756,82 @@
     .our-team-details {
         flex-direction: column;
         align-items: center;
+    }
+
+    /* contact form */
+    .contact-us {
+        width: 100%;
+    }
+
+    .contact-form {
+        height: 27rem;
+        margin-top: 1rem;
+    }
+
+    .name-email {
+        flex-direction: column;
+        height: 7rem;
+    }
+
+    .name-email > * {
+        width: 17rem;
+
+    }
+
+    .email {
+        margin-top: 1.8rem;
+    }
+
+    .adjust {
+        width: 17rem;
+    }
+
+    /* our mission */
+
+    .mission {
+        flex-direction: column;
+        align-items: center;
+        min-height: 90vh;
+        padding: 2rem;
+    }
+    
+    .mission > * {
+        width: 100%;
+
+    }
+
+
+    /* footer */
+
+    .footer {
+        min-height: 150vh;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-left: 1.7rem;
+        justify-content: space-between;
+    }
+
+    .footer-sub-head {
+        margin: 0.5rem;
+    }
+
+    .adjust-head {
+        margin-top: 2rem;
+    }
+
+    .footer-team-details > div {
+        margin-top: 1rem;
+    }
+
+    .footer-team-details {
+        /* margin-top: 6rem; */
+        width: 20rem;
+    }
+
+    .copy-text{
+        text-align: center;
     }
   }
