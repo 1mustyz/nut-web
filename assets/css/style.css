@@ -791,7 +791,7 @@
     .mission {
         flex-direction: column;
         align-items: center;
-        min-height: 140vh;
+        height: 150%;
         padding: 2rem;
     }
     
@@ -804,7 +804,7 @@
     /* footer */
 
     .footer {
-        min-height: 170vh;
+        height: 270%;
     }
 
     .footer-main {
